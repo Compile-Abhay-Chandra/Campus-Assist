@@ -1,0 +1,104 @@
+NORTHBRIDGE UNIVERSITY — ONE FRONT DOOR ROUTING AND EVALUATION CATALOG
+
+DOMAIN OWNERSHIP
+IT
+- University passwords and account lockouts
+- MFA and identity access
+- University email and collaboration
+- Campus Wi-Fi and VPN
+- Managed computers and approved software
+- Projectors, displays, lecture PCs and AV
+- Phishing and cybersecurity incidents
+
+HR
+- Employee leave and attendance
+- Payroll and payslips
+- Employment verification
+- Employee onboarding
+- HR documents and records
+- Mandatory employee training
+- Workplace policy and conduct
+
+FEES / STUDENT FINANCE
+- Tuition and invoices
+- Payment status
+- Late fees
+- Duplicate payments
+- Refunds
+- Scholarships and financial aid
+- Payment plans
+- Financial holds and clearance
+
+FACILITIES
+- AC/HVAC
+- Electrical systems
+- Plumbing and water
+- Housekeeping
+- Furniture and doors
+- Hostel physical maintenance
+- Room setup and temporary power
+- Building infrastructure
+
+ROUTING TEST CASES
+01 | My university Wi-Fi is not connecting. | IT
+02 | The Wi-Fi works in the library but not my hostel. | IT
+03 | I forgot my university password. | IT
+04 | I received an MFA request that I did not initiate. | IT
+05 | The projector is not detecting my laptop. | IT
+06 | I need access to department software. | IT
+07 | I lost my university laptop. | IT
+08 | I need to apply for earned leave. | HR
+09 | My attendance shows absent even though I was present. | HR
+10 | My salary credit is lower than expected. | HR
+11 | I need an employment verification letter. | HR
+12 | I joined yesterday but my email account is not active. | HR + IT
+13 | How do I change my payroll bank details? | HR
+14 | I was charged twice for semester tuition. | FEES
+15 | My payment is pending but my bank account was debited. | FEES
+16 | Can I get a refund for a duplicate payment? | FEES
+17 | My scholarship was approved but I cannot see the credit. | FEES
+18 | My registration is blocked because of an outstanding balance. | FEES
+19 | Can I pay tuition after the deadline? | FEES
+20 | The AC in classroom B-204 is not cooling. | FACILITIES
+21 | There is a water leak in the corridor. | FACILITIES
+22 | A classroom power socket is sparking. | FACILITIES
+23 | I need an extra chair for an event. | FACILITIES
+24 | My hostel room chair is broken. | FACILITIES
+25 | The classroom has no power and the projector is also off. | FACILITIES + IT
+26 | My room has a network problem. | CLARIFY unless the user specifies Wi-Fi/network or physical infrastructure
+27 | I need a refund. | CLARIFY — ask what type of refund
+28 | My account is not working. | CLARIFY — ask which account/service
+29 | There is a problem in my room. | CLARIFY — ask whether AC, electrical, plumbing, furniture or network
+30 | The university is charging me too much. | CLARIFY — ask for invoice/charge type
+31 | My new employee account has no email. | HR + IT
+32 | The lab has no electricity and class starts in ten minutes. | FACILITIES, urgent
+33 | My fee receipt is missing. | FEES
+34 | My payslip is missing. | HR
+35 | My classroom display is broken. | IT
+36 | The classroom door will not close. | FACILITIES
+
+RETRIEVAL EVALUATION
+A1 | What happens after five failed login attempts? | IT
+A2 | How long should I wait if my payment is pending? | FEES
+A3 | Who approves earned leave? | HR
+A4 | Who handles an AC that is running but not cooling? | FACILITIES
+A5 | Can I install a personal router in hostel? | IT
+A6 | What information should I put in a duplicate-payment ticket? | FEES
+A7 | What should I do after an unexpected MFA prompt? | IT
+A8 | How long does employment verification normally take? | HR
+A9 | Who handles a broken classroom chair? | FACILITIES
+A10 | Does VPN make my internet faster? | IT
+A11 | What happens to a financial hold after I pay? | FEES
+A12 | What should I do if water is leaking near an electrical socket? | FACILITIES
+
+MULTI-DOMAIN RULES
+1. HR verifies employment/onboarding records; IT owns email/account access.
+2. Facilities owns physical power and room infrastructure; IT owns projectors/displays/lecture PCs/AV.
+3. Finance owns the student financial ledger; HR does not resolve student tuition.
+4. If two independent issues are present, split the work and route each part.
+5. If the issue type is missing, ask a concise clarification.
+
+CONFIDENCE AND HANDOFF
+High confidence + supporting retrieval -> answer with source and section.
+Medium confidence -> answer cautiously or ask a targeted clarification.
+Low confidence or missing evidence -> do not fabricate; clarify or hand off to a human.
